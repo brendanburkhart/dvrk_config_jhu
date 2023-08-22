@@ -1,0 +1,52 @@
+/* -*- Mode: Javascript; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
+{
+    "io":
+    {
+        "footpedals": "io/sawRobotIO1394-MTMR-foot-pedals.xml",
+        "firewire-protocol": "brw"
+    },
+    "arms":
+    [
+        {
+            "name": "PSM2",
+            "type": "PSM",
+            "pid": "pid/sawControllersPID-PSM.json",
+            "arm": "PSM2-27374-dyn-no-scaling.json",
+            "base-frame": {
+                "reference-frame": "ECM",
+                "transform": [[  1.0,  0.0,  0.0,  0.0],
+                              [  0.0,  1.0,  0.0,  0.0 ],
+                              [  0.0,  0.0,  1.0,  0.0],
+                              [  0.0,  0.0,  0.0,  1.0 ]]
+            }
+        }
+        ,
+        {
+            "name": "MTML",
+            "type": "MTM",
+            "pid": "pid/sawControllersPID-MTM.json",
+            "arm": "MTML-22723-dyn-no-scaling.json",
+            "base-frame": {
+                "reference-frame": "HRSV",
+                "transform": [[ -1.0,  0.0,  0.0,  0.0],
+                              [  0.0, -1.0,  0.0,  0.0],
+                              [  0.0,  0.0,  1.0,  0.0],
+                              [  0.0,  0.0,  0.0,  1.0]]
+            }
+        }
+    ]
+    ,
+    "psm-teleops":
+    [
+        {
+            "mtm": "MTML",
+            "psm": "PSM2",
+            "configure-parameter": {
+                "mode": "BILATERAL",
+                "artificial-latency-ms": 0,
+                "scale": 1.0,
+                "jaw-rate": 6.3
+            }
+        }
+    ]
+}
