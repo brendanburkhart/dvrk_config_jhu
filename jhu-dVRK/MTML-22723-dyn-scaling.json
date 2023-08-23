@@ -4,5 +4,5 @@
     "gravity-compensation": "gc-MTML-22723.json",
     "generation": "Classic"
     // , "platform-gain": 1.0
-    , "force-estimation-network": "/home/bburkha4/catkin_ws/src/dvrk-ros/dvrk_python/scripts/deployed_models/mtm_force_estimation.onnx"
+    , "force-estimation-network": "deployed_models/mtm_force_estimation.onnx"
 }

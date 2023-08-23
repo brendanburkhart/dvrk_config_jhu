@@ -3,5 +3,5 @@
     "kinematic": "kinematic/psm.json",
     "generation": "Classic",
     "tool-detection": "AUTOMATIC"
-    , "force-estimation-network": "/home/bburkha4/catkin_ws/src/dvrk-ros/dvrk_python/scripts/deployed_models/psm_force_estimation_scaling_1_v1.onnx"
+    , "force-estimation-network": "deployed_models/psm_force_estimation_scaling_1_v1.onnx"
 }

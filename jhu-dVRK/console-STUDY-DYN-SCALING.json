@@ -10,7 +10,8 @@
         {
             "name": "PSM2",
             "type": "PSM",
-            "pid": "pid/sawControllersPID-PSM.json",
+            "serial": 27374,
+            "pid": "pid/sawControllersPID-PSM-scaling.json",
             "arm": "PSM2-27374-dyn-scaling.json",
             "base-frame": {
                 "reference-frame": "ECM",
@@ -24,7 +25,8 @@
         {
             "name": "MTML",
             "type": "MTM",
-            "pid": "pid/sawControllersPID-MTM.json",
+            "serial": 22723,
+            "pid": "pid/sawControllersPID-MTM-scaling.json",
             "arm": "MTML-22723-dyn-scaling.json",
             "base-frame": {
                 "reference-frame": "HRSV",
